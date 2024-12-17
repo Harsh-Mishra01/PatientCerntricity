@@ -1,0 +1,101 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+.nav-title2{
+    color: #7C3A84;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 145%;
+    margin-left: 50px;
+    /* 36.25px */
+}
+.all-menu {
+    /* padding: 0px; */
+    /* color: #7C3A84; */
+    margin-bottom: 44px;
+    margin-left: -7px;
+}
+.forum-container2 {
+    color: #606368;
+    padding: 8px 9px;
+    /* font-family: "Inter", sans-serif; */
+    font-size: 14px;
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    /* line-height: 24px; */
+    /* text-align: justify; */
+    border: 1px solid #c8c8c8;
+    border-radius: 7px;
+    width: 29%;
+    float: right;
+    margin-top: -36px;
+    margin-right: 26px;
+}
+
+
+.menu-container {
+    color: #7c3a84;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    padding: 15px 10px;
+    cursor: pointer;
+}
+span.menu-container2 {
+    margin: 13px;
+    color: #696969;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card-title{
+    color: #7C3A84;
+}
+.segment{
+    color: #606368;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 10px 0px;
+}
+
+
+
+.lower-title {
+    color: #7C3A84;
+    padding: 10px 20px;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.lower-container {
+    color: #606368;
+    padding: 10px 20px; /* Adjusted padding to match the title */
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: justify; /* Ensures text alignment within the container */
+}
+.filter-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 20px; */
+    gap: 20px;
+    margin-right: -5px;
+    font-family: "Inter", sans-serif;
+}
+
+hr {
+    margin-top: -10px;
+}
