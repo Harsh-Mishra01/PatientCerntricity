@@ -11,6 +11,7 @@ import ContentStack from "../charts/ContentStack";
 import ValuesChart from "../charts/ValuesChart";
 import TrialStackChart from "../charts/TrialStackChart";
 import { chartData1, chartData2, chartData3 } from "../static/data";
+import NewCard from "../components/NewCard";
 // Function to filter data by category
 const filterDataByCategory = (category) => {
   return jsonData.filter((item) => item.Category === category);
@@ -1681,12 +1682,16 @@ export default function ContentPage() {
                         style={{ width: "60%" }}
                       />
                     </div>
+
                   </Card.Body>
                   {/* </Card> */}
                 </Container>
               </Card>
             </Col>
           </Row>
+        </Container>
+        <Container>
+          <NewCard/>
         </Container>
 
         <Container className="mt-2 p-3">
