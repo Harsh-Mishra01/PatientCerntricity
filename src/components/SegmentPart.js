@@ -1,7 +1,7 @@
 import {Card} from "react-bootstrap"
 export const SegmentPart = ({ data }) => {
     return<>
-      <Card className="p-3">
+      <Card className="p-3 ms-3 me-3">
         <span className="top-forum">Segment</span>
         {data.map((forum, index) => (
         <div key={index}>

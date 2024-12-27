@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Header } from "../components/Header";
 import { TopForums } from "../components/TopForums";
@@ -7,7 +7,8 @@ import MostFrequentTopicsChart from "../charts/MostFrequentTopics";
 import { SingleBarChart } from "../charts/SingleBarChart";
 import HorizontalBarChartComponent from "../charts/HorizontalBarComponent";
 import DynamicCommentSection from "../components/DynamicCommentSection";
-import { chartData1, chartData2, chartData3, chartData4, chartData5, chartData6 } from "../static/data";
+// import { chartData1, chartData2, chartData3, chartData4, chartData5, chartData6, chartData13, chartData14, chartData15, chartData16, chartData20, chartData24, chartData28, chartData32, chartData36 } from "../static/data";
+import { chartData1, chartData2, chartData3, chartData4, chartData5, chartData6, chartData7, chartData8, chartData9, chartData10, chartData11, chartData12, chartData13, chartData14, chartData15, chartData16, chartData17, chartData18, chartData19, chartData20, chartData21, chartData22, chartData23, chartData24, chartData25, chartData26, chartData27, chartData28, chartData29, chartData30, chartData31, chartData32, chartData33, chartData34, chartData35, chartData36 } from "../static/newdata";
 
 // import SupportChart from "../charts/pagesCharts/SupportChart";
 // import ContentChart from "../charts/pagesCharts/ContentChart";
@@ -22,6 +23,12 @@ import ValuesChart from "../charts/ValuesChart";
 export default function HomePage() {
     // Initialize state for selected disease
     const [selectedDisease, setSelectedDisease] = useState(null);
+    const [chartData, setChartData] = useState(chartData1); // Default data
+    const [chart2Data, setChart2Data] = useState(chartData2); // Default data
+    const [chart3Data, setChart3Data] = useState(chartData3); // Default data
+    const [chart4Data, setChart4Data] = useState(chartData4); // Default data
+    const [chart5Data, setChart5Data] = useState(chartData5); // Default data
+    const [chart6Data, setChart6Data] = useState(chartData6); // Default data
 
     // Initialize kpiData with useState
     const [kpiData, setKpiData] = useState([
@@ -234,8 +241,6 @@ export default function HomePage() {
         { name: "Evogliptin", value: 215 },  // Added Evogliptin with a new value
         { name: "Omarigliptin", value: 195 },// Added Omarigliptin with a new value
     ]);
-
-
 
     const [SentimentData, setSentimentData] = useState([
         { name: "Humalog", positive: 193, negative: 73, neutral: 32 },
@@ -840,7 +845,224 @@ export default function HomePage() {
             setTitle1("ALL");
             setTitle2("Biological Agents (Biologics)");
             setTitle3("DMARDs");
+        } else if (selectedDisease === "Lung Cancer") {
+            setKpiData([
+                { title: "TOTAL FORUMS", number: 18 },
+                { title: "TOTAL DISCUSSIONS", number: "740, 902" },
+                { title: "TOTAL COMMENTS", number: "2000000" },
+                { title: "AVG ENGAGEMENT", number: "2.7 comments/thread" },
+            ]);
+            setForumData([
+                { name: "Reddit", percentage: "19%" },
+                { name: "Diabetes Daily Forum", percentage: "16.5%" },
+                { name: "TuDiabetes Forum", percentage: "13.8%" },
+                { name: "Drugs.com", percentage: "12%" },
+                { name: "Patient.info Forum", percentage: "11%" },
+                { name: "Carenity Diabetes", percentage: "8%" },
+                { name: "PatientLikeMe", percentage: "5%" },
+                { name: "Smart Patients", percentage: "4%" },
+                { name: "myDiabetes", percentage: "3%" },
+                { name: "Beyond Type 2", percentage: "0.7%" },
+            ]);
+            setTopDrug([
+                { name: "Keytruda", percentage: "12.5%" },
+                { name: "Opdivo", percentage: "11.2%" },
+                { name: "Tecentriq", percentage: "10.8%" },
+                { name: "Avastin", percentage: "9.7%" },
+                { name: "Tarceva", percentage: "8.5%" },
+                { name: "Iressa", percentage: "7.9%" },
+                { name: "Alimta", percentage: "7.2%" },
+                { name: "Tagrisso", percentage: "6.8%" },
+                { name: "Xalkori", percentage: "6.4%" },
+                { name: "Alecensa", percentage: "5.9%" },
+                { name: "Imfinzi", percentage: "5.4%" },
+                { name: "Camptosar", percentage: "5.0%" },
+                { name: "Cyclophosphamide", percentage: "4.6%" },
+                { name: "Adriamycin", percentage: "4.1%" },
+                { name: "Etopophos", percentage: "3.7%" },
+                { name: "Carboplatin", percentage: "3.4%" },
+                { name: "Cisplatin", percentage: "3.0%" },
+                { name: "Gilotrif", percentage: "2.8%" },
+                { name: "Lorbrena", percentage: "2.5%" },
+                { name: "Rybrevant", percentage: "2.2%" },
+                { name: "Zykadia", percentage: "1.9%" },
+                { name: "Vizimpro", percentage: "1.6%" },
+                { name: "Portrazza", percentage: "1.3%" },
+                { name: "Cyramza", percentage: "1.1%" },
+                { name: "Gavreto", percentage: "0.9%" },
+                { name: "Retevmo", percentage: "0.8%" },
+                { name: "Lazertinib", percentage: "0.7%" },
+                { name: "Sutent", percentage: "0.5%" },
+                { name: "Afinitor", percentage: "0.3%" },
+                { name: "Sandostatin", percentage: "0.1%" },
+            ]);
+            
+            setSingleGraphData([
+                { name: "Ozempic", value: 800 },
+                { name: "Victoza", value: 430 },
+                { name: "Byetta", value: 280 },
+                { name: "Trulicity", value: 250 },
+                { name: "Jardiance", value: 220 },
+                { name: "Invokana", value: 210 },
+            ]);
+            setSingleGraphData2([
+                { name: "Humalog", value: 1250 },
+                { name: "Novolog", value: 880 },
+                { name: "Diabeta", value: 540 },
+                { name: "Apidra", value: 310 },
+                { name: "Aspart", value: 95 },
+                { name: "Fiasp", value: 80 },
+                { name: "Glucophage", value: 280 },
+                { name: "Levemir", value: 260 },
+                { name: "Glimepride", value: 200 },
+                { name: "Actos", value: 160 },
+            ]);
+            setSingleGraphData3([
+                { name: "Januvia", value: 450 },
+                { name: "Janumet", value: 400 },
+                { name: "Oseni", value: 350 },
+                { name: "Nesina", value: 320 },
+                { name: "Jentadueto", value: 290 },
+                { name: "Tradjenta", value: 270 },
+                { name: "Onglyza", value: 250 },
+                { name: "Evogliptin", value: 220 },
+                { name: "Omarigliptin", value: 210 },
+            ]);
+            setSentimentData([
+                { name: "Humalog", positive: 200, negative: 80, neutral: 40 },
+                { name: "Novolog", positive: 110, negative: 70, neutral: 30 },
+                { name: "Ozempic", positive: 90, negative: 60, neutral: 25 },
+                { name: "Diabeta", positive: 5, negative: 2, neutral: 0 },
+                { name: "Victoza", positive: 60, negative: 30, neutral: 5 },
+                { name: "Apidra", positive: 55, negative: 30, neutral: 15 },
+                { name: "Byetta", positive: 40, negative: 35, neutral: 10 },
+                { name: "Trulicity", positive: 25, negative: 12, neutral: 5 },
+                { name: "Asparat", positive: 0, negative: 0, neutral: 0 },
+                { name: "Fiasp", positive: 8, negative: 6, neutral: 2 },
+                { name: "Glucophage", positive: 38, negative: 18, neutral: 7 },
+                { name: "Levemir", positive: 90, negative: 45, neutral: 15 },
+                { name: "Glimepride", positive: 2, negative: 3, neutral: 1 },
+                { name: "Actos", positive: 145, negative: 75, neutral: 35 },
+                { name: "Jardiance", positive: 135, negative: 70, neutral: 18 },
+                { name: "Invoka", positive: 45, negative: 65, neutral: 15 },
+                { name: "Basalgar", positive: 0, negative: 0, neutral: 0 },
+                { name: "Glyburide", positive: 42, negative: 25, neutral: 14 },
+                { name: "Glimpepiride", positive: 1, negative: 1, neutral: 1 },
+                { name: "Amaryl", positive: 8, negative: 10, neutral: 2 },
+            ]);
+            setTitle1("Diabetes with Weightloss");
+            setTitle2("Diabetes");
+            setTitle3("Gliptins");
         }
+        else if (selectedDisease === "Breast Cancer") {
+            setKpiData([
+                { title: "TOTAL FORUMS", number: 30 },
+                { title: "TOTAL DISCUSSIONS", number: "180,000" },
+                { title: "TOTAL COMMENTS", number: "15,000,000" },
+                { title: "AVG ENGAGEMENT", number: "12/thread" },
+            ]);
+            setForumData([
+                { name: "Reddit", percentage: "22%" },
+                { name: "Diabetes Daily Forum", percentage: "18%" },
+                { name: "TuDiabetes Forum", percentage: "14.5%" },
+                { name: "Drugs.com", percentage: "10%" },
+                { name: "Patient.info Forum", percentage: "9%" },
+                { name: "Carenity Diabetes", percentage: "7.5%" },
+                { name: "PatientLikeMe", percentage: "5%" },
+                { name: "Smart Patients", percentage: "3.5%" },
+                { name: "myDiabetes", percentage: "2.5%" },
+                { name: "Beyond Type 2", percentage: "1%" },
+            ]);
+            setTopDrug([
+                { name: "Humalog", percentage: "7.12%" },
+                { name: "Novolog", percentage: "5%" },
+                { name: "Ozempic", percentage: "4.75%" },
+                { name: "Diabeta", percentage: "0.03%" },
+                { name: "Victoza", percentage: "2.5%" },
+                { name: "Apidra", percentage: "1.8%" },
+                { name: "Byetta", percentage: "1.25%" },
+                { name: "Trulicity", percentage: "1.15%" },
+                { name: "Aspart", percentage: "0.9%" },
+                { name: "Fiasp", percentage: "0.65%" },
+                { name: "Glucophage", percentage: "0.45%" },
+                { name: "Levemir", percentage: "3.1%" },
+                { name: "Glimepride", percentage: "0.65%" },
+                { name: "Actos", percentage: "2.7%" },
+                { name: "Jardiance", percentage: "1.6%" },
+                { name: "Invokana", percentage: "1.2%" },
+                { name: "Basalgar", percentage: "0.8%" },
+                { name: "Glyburide", percentage: "0.6%" },
+                { name: "Glimpepiride", percentage: "0.7%" },
+                { name: "Amaryl", percentage: "0.45%" },
+                { name: "Januvia", percentage: "2.5%" },
+                { name: "Janumet", percentage: "0.55%" },
+                { name: "Oseni", percentage: "0.18%" },
+                { name: "Fortamet", percentage: "0.08%" },
+                { name: "Nesina", percentage: "0.07%" },
+                { name: "Jentadueto", percentage: "0.06%" },
+                { name: "Tradjenta", percentage: "0.25%" },
+                { name: "Onglyza", percentage: "0.3%" },
+                { name: "Evogliptin", percentage: "0.12%" },
+                { name: "Omarigliptin", percentage: "0.07%" },
+            ]);
+            setSingleGraphData([
+                { name: "Ozempic", value: 850 },
+                { name: "Victoza", value: 460 },
+                { name: "Byetta", value: 300 },
+                { name: "Trulicity", value: 270 },
+                { name: "Jardiance", value: 240 },
+                { name: "Invokana", value: 230 },
+            ]);
+            setSingleGraphData2([
+                { name: "Humalog", value: 1300 },
+                { name: "Novolog", value: 900 },
+                { name: "Diabeta", value: 570 },
+                { name: "Apidra", value: 320 },
+                { name: "Aspart", value: 100 },
+                { name: "Fiasp", value: 85 },
+                { name: "Glucophage", value: 300 },
+                { name: "Levemir", value: 270 },
+                { name: "Glimepride", value: 210 },
+                { name: "Actos", value: 170 },
+            ]);
+            setSingleGraphData3([
+                { name: "Januvia", value: 480 },
+                { name: "Janumet", value: 420 },
+                { name: "Oseni", value: 370 },
+                { name: "Nesina", value: 330 },
+                { name: "Jentadueto", value: 300 },
+                { name: "Tradjenta", value: 280 },
+                { name: "Onglyza", value: 260 },
+                { name: "Evogliptin", value: 230 },
+                { name: "Omarigliptin", value: 220 },
+            ]);
+            setSentimentData([
+                { name: "Humalog", positive: 210, negative: 90, neutral: 50 },
+                { name: "Novolog", positive: 120, negative: 75, neutral: 35 },
+                { name: "Ozempic", positive: 100, negative: 65, neutral: 30 },
+                { name: "Diabeta", positive: 7, negative: 3, neutral: 1 },
+                { name: "Victoza", positive: 65, negative: 35, neutral: 8 },
+                { name: "Apidra", positive: 58, negative: 33, neutral: 18 },
+                { name: "Byetta", positive: 42, negative: 37, neutral: 12 },
+                { name: "Trulicity", positive: 28, negative: 15, neutral: 8 },
+                { name: "Asparat", positive: 1, negative: 0, neutral: 0 },
+                { name: "Fiasp", positive: 9, negative: 7, neutral: 3 },
+                { name: "Glucophage", positive: 40, negative: 20, neutral: 8 },
+                { name: "Levemir", positive: 95, negative: 50, neutral: 18 },
+                { name: "Glimepride", positive: 4, negative: 4, neutral: 2 },
+                { name: "Actos", positive: 150, negative: 80, neutral: 38 },
+                { name: "Jardiance", positive: 140, negative: 72, neutral: 22 },
+                { name: "Invoka", positive: 50, negative: 60, neutral: 20 },
+                { name: "Basalgar", positive: 0, negative: 0, neutral: 0 },
+                { name: "Glyburide", positive: 45, negative: 26, neutral: 15 },
+                { name: "Glimpepiride", positive: 2, negative: 2, neutral: 1 },
+                { name: "Amaryl", positive: 10, negative: 12, neutral: 3 },
+            ]);
+            setTitle1("Diabetes with Weightloss");
+            setTitle2("Diabetes");
+            setTitle3("Gliptins");
+        }
+        
 
     };
     const title_1 = "Diabetes with Weightloss";
@@ -849,6 +1071,42 @@ export default function HomePage() {
     const [title1, setTitle1] = useState("Diabetes with Weightloss");
     const [title2, setTitle2] = useState("Diabetes");
     const [title3, setTitle3] = useState("Gliptins");
+
+
+
+
+    useEffect(() => {
+        if (selectedDisease === 'Type II Diabetes') {
+            setChartData(chartData1);
+            setChart2Data(chartData2);
+            setChart3Data(chartData3);
+            setChart4Data(chartData4);
+            setChart5Data(chartData5);
+            setChart6Data(chartData6);
+        } else if (selectedDisease === 'Rheumatoid Arthritis') {
+            // setChartData(chartData1);
+            // setChart2Data(chartData2);
+            // setChart3Data(chartData3);
+            // setChart4Data(chartData4);
+            // setChart5Data(chartData5);
+            // setChart6Data(chartData6);
+        } else if (selectedDisease === 'Psoriatic Arthritis') {
+            // setChartData(chartData15);
+            // setChart2Data(chartData19);
+            // setChart3Data(chartData23);
+            // setChart4Data(chartData27);
+            // setChart5Data(chartData31);
+            // setChart6Data(chartData35);
+        }  else if (selectedDisease === 'Lung Cancer') {
+            setChartData(chartData16);
+            setChart2Data(chartData20);
+            setChart3Data(chartData24);
+            setChart4Data(chartData28);
+            setChart5Data(chartData32);
+            setChart6Data(chartData36);
+        }  
+    }, [selectedDisease]);
+
     return (
         <>
             {/* Header component with home page reset on click */}
@@ -856,42 +1114,42 @@ export default function HomePage() {
 
             <Container fluid>
                 <Container className="mt-2 p-3">
-                    <Card>
+                    <Card >
                         <Row>
                             <Col lg={4}>
                                 <Card className="p-3 m-2">
                                 {/* <ValuesChart data={chartData1} /> */}
-                                <TrialStackChart details={chartData1}/>
+                                <TrialStackChart details={chartData}/>
                                 </Card>
                             </Col>
                             <Col lg={4}>
                                 <Card className="p-3 m-2">
-                                <TrialStackChart details={chartData2} />
+                                <TrialStackChart details={chart2Data} />
                                 </Card>
                             </Col>
                             <Col lg={4}>
                                 <Card className="p-3 m-2">
-                                <TrialStackChart details={chartData3} />
+                                <TrialStackChart details={chart3Data} />
 
                                 </Card>
                             </Col>
                         </Row>
                         <Row>
                             <Col lg={4}>
-                                <Card className="p-3 m-2">
-                                <TrialStackChart details={chartData4} />
+                                <Card className="p-3 m-2 ">
+                                <TrialStackChart details={chart4Data} />
 
                                 </Card>
                             </Col>
                             <Col lg={4}>
                                 <Card className="p-3 m-2">
-                                <TrialStackChart details={chartData5} />
+                                <TrialStackChart details={chart5Data} />
 
                                 </Card>
                             </Col>
                             <Col lg={4}>
                                 <Card className="p-3 m-2">
-                                <TrialStackChart details={chartData6} />
+                                <TrialStackChart details={chart6Data} />
                                 </Card>
                             </Col>
                         </Row>
@@ -961,7 +1219,7 @@ export default function HomePage() {
 
 
                                             <div className="chart-container" style={{ textAlign: "center" }}>
-                                                <img src="https://multipliersolutions.in/patient-centricity/summary.png" alt="HeatMap" style={{ width: '60%' }} />
+                                                <img src="/heatmap2.png" alt="HeatMap" style={{ width: '60%' }} />
                                             </div>
                                         </Card.Body>
                                         {/* </Card> */}

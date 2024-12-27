@@ -96,6 +96,8 @@ export const Header = ({ data, onDiseaseChange, onHomeClick }) => {
                                 <option value="Type II Diabetes">Type II Diabetes</option>
                                 <option value="Rheumatoid Arthritis">Rheumatoid Arthritis</option>
                                 <option value="Psoriatic Arthritis">Psoriatic Arthritis</option>
+                                <option value="Lung Cancer">Lung Cancer</option>
+                                <option value="Breast Cancer" disabled>Breast Cancer</option>
                             </select>
                         </form>
                     </Col>

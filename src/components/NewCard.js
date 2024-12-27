@@ -100,42 +100,74 @@ export default function NewCard(params) {
                     <Row>
                         {/* <h6 className="chart-title m-3">Website</h6> */}
                         <Col lg={4}>
-                            <Card className="p-3 m-2" style={{textAlign: "justify"}}>
+                            <Card className="p-3 m-2 h-100" style={{textAlign: "justify"}}>
                                 <h6 className="top-forum m-3">Ads</h6>
                                 <h2 className="chart-title mb-1 ms-3 mt-3">Visual Suggestions:</h2>
-                                <p className=" m-3" >Use real patient images that are diverse and relatable.
-                                    Include high-quality visuals like before-after transformations and clean graphics.
-                                    Design bold CTAs with contrasting buttons to drive action.</p>
+                                <p className=" m-3" >
+                                    <ul>
+                                        <li>Use real patient images that are diverse and relatable.</li>
+                                        <li>Include high-quality visuals like before-after transformations and clean graphics.</li>
+                                        <li> Design bold CTAs with contrasting buttons to drive action.</li>
+
+                                    </ul>
+                                    
+                                    
+                                    
+                                   </p>
                                 <h2 className="chart-title mb-1 ms-3 mt-3"> Content Suggestions:</h2>
-                                <p className=" m-3">Focus on empathetic messaging with real patient stories.
-                                    Highlight clear benefits (e.g., "Achieve X% weight loss in 3 months").
-                                    Use actionable CTAs like “Talk to your doctor today” or “Learn more about managing diabetes.”</p>
+                                <p className=" m-3">
+                                    <ul>
+                                        <li>Focus on empathetic messaging with real patient stories.</li>
+                                        <li> Highlight clear benefits (e.g., "Achieve X% weight loss in 3 months").</li>
+                                        <li> Use actionable CTAs like “Talk to your doctor today” or “Learn more about managing diabetes.”</li>
+                                    </ul>
+                                   
+                                   </p>
                             </Card>
                         </Col>
                         <Col lg={4}>
-                            <Card className="p-3 m-2">
+                            <Card className="p-3 m-2 h-100">
                                 <h6 className="top-forum m-3">Social Media Content</h6>
                                 <h2 className="chart-title mb-1 ms-3 mt-3">Visual Suggestions:</h2>
-                                <p className=" m-3">Create infographics for quick tips and benefits (e.g., “5 Habits for Diabetes Control”).
-                                    Post short videos (15-30 seconds) featuring patient journeys or treatment education.
-                                    Share before-and-after visuals or user-generated content.</p>
+                                <p className=" m-3">
+                                    <ul>
+                                        <li>Create infographics for quick tips and benefits (e.g., “5 Habits for Diabetes Control”).</li>
+                                        <li>Post short videos (15-30 seconds) featuring patient journeys or treatment education.</li>
+                                        <li>Share before-and-after visuals or user-generated content.</li>
+                                    </ul>
+                                    
+                                   </p>
                                 <h2 className="chart-title mb-1 ms-3 mt-3"> Content Suggestions:</h2>
-                                <p className=" m-3">Use polls and interactive posts to boost engagement (e.g., “What’s your biggest challenge managing diabetes?”).
-                                    Share educational content: Bite-sized tips and health facts.
-                                    Highlight patient success with testimonials: “Patient X improved in 3 months.”</p>
+                                <p className=" m-3">
+                                    <ul>
+                                        <li>Use polls and interactive posts to boost engagement (e.g., “What’s your biggest challenge managing diabetes?”).</li>
+                                        <li>Share educational content: Bite-sized tips and health facts.</li>
+                                        <li>Highlight patient success with testimonials: “Patient X improved in 3 months.”</li>
+                                    </ul>
+                                    </p>
                             </Card>
                         </Col>
                         <Col lg={4}>
-                            <Card className="p-3 m-2">
+                            <Card className="p-3 m-2 h-100">
                                 <h6 className="top-forum m-3"> Website Content</h6>
                                 <h2 className="chart-title mb-1 ms-3 mt-3">Visual Suggestions:</h2>
-                                <p className=" m-3">Use a clean layout with a mix of images, videos, and icons for clarity.
-                                    Add CTA buttons after key sections to guide patients (e.g., "Learn More" or "Book a Consultation").
-                                    Showcase success stories with before-after visuals and videos.</p>
+                                <p className=" m-3">
+                                <ul>
+                                        <li>Use a clean layout with a mix of images, videos, and icons for clarity.</li>
+                                        <li>Add CTA buttons after key sections to guide patients (e.g., "Learn More" or "Book a Consultation").</li>
+                                        <li>Showcase success stories with before-after visuals and videos.</li>
+                                    </ul>
+                                    
+                                    
+                                    </p>
                                 <h2 className="chart-title mb-1 ms-3 mt-3 "> Content Suggestions:</h2>
-                                <p className=" m-3">Structure pages clearly: Benefits, How It Works, and Success Stories sections.
-                                    Simplify medical language with clear, patient-friendly terms.
-                                    Include relatable patient testimonials and treatment outcomes to build trust.</p>
+                                <p className=" m-3">
+                                <ul>
+                                        <li>Structure pages clearly: Benefits, How It Works, and Success Stories sections.</li>
+                                        <li>Simplify medical language with clear, patient-friendly terms.</li>
+                                        <li>Include relatable patient testimonials and treatment outcomes to build trust.</li>
+                                    </ul>
+                                    </p>
                             </Card>
                         </Col>
                         {/* <Col lg={4}>

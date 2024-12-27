@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "../css/content.css";
 import { DoubleBarChart } from "../charts/DoubleBarChart";
@@ -10,7 +10,8 @@ import { Header } from "../components/Header";
 import ContentStack from "../charts/ContentStack";
 import ValuesChart from "../charts/ValuesChart";
 import TrialStackChart from "../charts/TrialStackChart";
-import { chartData1, chartData2, chartData3 } from "../static/data";
+//import { chartData1, chartData2, chartData3 } from "../static/data";
+import { chartData1, chartData2, chartData3, chartData4, chartData5, chartData6, chartData7, chartData8, chartData9, chartData10, chartData11, chartData12, chartData13, chartData14, chartData15, chartData16, chartData17, chartData18, chartData19, chartData20, chartData21, chartData22, chartData23, chartData24, chartData25, chartData26, chartData27, chartData28, chartData29, chartData30, chartData31, chartData32, chartData33, chartData34, chartData35, chartData36 } from "../static/newdata";
 import NewCard from "../components/NewCard";
 // Function to filter data by category
 const filterDataByCategory = (category) => {
@@ -20,6 +21,13 @@ const filterDataByCategory = (category) => {
 export default function ContentPage() {
   // State for selected disease and KPI data
   const [selectedDisease, setSelectedDisease] = useState("");
+      const [chartData, setChartData] = useState(chartData1); // Default data
+      const [chart2Data, setChart2Data] = useState(chartData2); // Default data
+      const [chart3Data, setChart3Data] = useState(chartData3); // Default data
+      
+
+
+
   const [kpiData, setKpiData] = useState([
     { title: "TOTAL FORUMS", number: 20 },
     { title: "TOTAL DISCUSSIONS", number: "1,20,000" },
@@ -1572,6 +1580,821 @@ export default function ContentPage() {
       setTitle1("ALL");
       setTitle2("Biological Agents (Biologics)");
       setTitle3("DMARDs");
+    }  else if (selectedDisease === "Lung Cancer") {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 18 },
+        { title: "TOTAL DISCUSSIONS", number: "740, 902" },
+        { title: "TOTAL COMMENTS", number: "2000000" },
+        { title: "AVG ENGAGEMENT", number: "2.7 comments/thread" },
+      ]);
+    
+      setwebsiteData([
+        { name: "Keytruda", value: 92, value2: 88 },
+        { name: "Opdivo", value: 85, value2: 80 },
+        { name: "Tarceva", value: 78, value2: 75 },
+        { name: "Iressa", value: 20, value2: 30 },
+        { name: "Alimta", value: 65, value2: 63 },
+        { name: "Tagrisso", value: 50, value2: 47 },
+        { name: "Xalkori", value: 64, value2: 46 },
+        { name: "Alecensa", value: 28, value2: 25 },
+        { name: "Tecentriq", value: 18, value2: 16 },
+        { name: "Avastin", value: 8, value2: 6 },
+    ]);
+      setwebsiteData2([
+        { name: "Etopophos", value: 14, value2: 21 },
+        { name: "Carboplatin", value: 18, value2: 19 },
+        { name: "Cisplatin", value: 12, value2: 16 },
+        { name: "Imfinzi", value: 9, value2: 14 },
+        { name: "Camptosar", value: 7, value2: 11 },
+        { name: "Cyclophosphamide", value: 10, value2: 15 },
+        { name: "Adriamycin", value: 8, value2: 13 },
+        { name: "Keytruda", value: 5, value2: 8 },
+        { name: "Tecentriq", value: 7, value2: 9 },
+        { name: "Zofran", value: 5, value2: 9 },
+      ]);
+
+      setwebsiteData3([
+        { name: "Sandostatin", value: 19, value2: 24 },
+        { name: "Somatuline Depot", value: 14, value2: 20 },
+        { name: "Afinitor", value: 12, value2: 15 },
+        { name: "Sutent", value: 12, value2: 18 },
+        { name: "Xermelo", value: 15, value2: 19 },
+        { name: "Zofran", value: 13, value2: 2 },
+        { name: "Kytril", value: 12, value2: 17 },
+        { name: "Dexamethasone", value: 8, value2: 14 },
+        { name: "Caprelsa", value: 8, value2: 3 },
+        { name: "Temodar", value: 2, value2: 1 },
+    ]);
+    
+    
+    setTvData([
+      { name: "Keytruda", value: 92, value2: 88 },
+      { name: "Opdivo", value: 85, value2: 80 },
+      { name: "Tarceva", value: 78, value2: 75 },
+      { name: "Iressa", value: 20, value2: 30 },
+      { name: "Alimta", value: 65, value2: 63 },
+      { name: "Tagrisso", value: 50, value2: 47 },
+      { name: "Xalkori", value: 64, value2: 46 },
+      { name: "Alecensa", value: 28, value2: 25 },
+      { name: "Tecentriq", value: 18, value2: 16 },
+      { name: "Avastin", value: 8, value2: 6 },
+    ]);
+    
+    setTvData2([
+      { name: "Etopophos", value: 14, value2: 21 },
+      { name: "Carboplatin", value: 18, value2: 19 },
+      { name: "Cisplatin", value: 12, value2: 16 },
+      { name: "Imfinzi", value: 9, value2: 14 },
+      { name: "Camptosar", value: 7, value2: 11 },
+      { name: "Cyclophosphamide", value: 10, value2: 15 },
+      { name: "Adriamycin", value: 8, value2: 13 },
+      { name: "Keytruda", value: 5, value2: 8 },
+      { name: "Tecentriq", value: 7, value2: 9 },
+      { name: "Zofran", value: 5, value2: 9 },
+    ]);
+    
+    setTvData3([
+      { name: "Sandostatin", value: 19, value2: 24 },
+      { name: "Somatuline Depot", value: 14, value2: 20 },
+      { name: "Afinitor", value: 12, value2: 15 },
+      { name: "Sutent", value: 12, value2: 18 },
+      { name: "Xermelo", value: 15, value2: 19 },
+      { name: "Zofran", value: 13, value2: 2 },
+      { name: "Kytril", value: 12, value2: 17 },
+      { name: "Dexamethasone", value: 8, value2: 14 },
+      { name: "Caprelsa", value: 8, value2: 3 },
+      { name: "Temodar", value: 2, value2: 1 },
+    ]);
+    
+    setTopDrug([
+      { name: "Keytruda", percentage: "12.5%" },
+      { name: "Opdivo", percentage: "11.2%" },
+      { name: "Tecentriq", percentage: "10.8%" },
+      { name: "Avastin", percentage: "9.7%" },
+      { name: "Tarceva", percentage: "8.5%" },
+      { name: "Iressa", percentage: "7.9%" },
+      { name: "Alimta", percentage: "7.2%" },
+      { name: "Tagrisso", percentage: "6.8%" },
+      { name: "Xalkori", percentage: "6.4%" },
+      { name: "Alecensa", percentage: "5.9%" },
+      { name: "Imfinzi", percentage: "5.4%" },
+      { name: "Camptosar", percentage: "5.0%" },
+      { name: "Cyclophosphamide", percentage: "4.6%" },
+      { name: "Adriamycin", percentage: "4.1%" },
+      { name: "Etopophos", percentage: "3.7%" },
+      { name: "Carboplatin", percentage: "3.4%" },
+      { name: "Cisplatin", percentage: "3.0%" },
+      { name: "Gilotrif", percentage: "2.8%" },
+      { name: "Lorbrena", percentage: "2.5%" },
+      { name: "Rybrevant", percentage: "2.2%" },
+      { name: "Zykadia", percentage: "1.9%" },
+      { name: "Vizimpro", percentage: "1.6%" },
+      { name: "Portrazza", percentage: "1.3%" },
+      { name: "Cyramza", percentage: "1.1%" },
+      { name: "Gavreto", percentage: "0.9%" },
+      { name: "Retevmo", percentage: "0.8%" },
+      { name: "Lazertinib", percentage: "0.7%" },
+      { name: "Sutent", percentage: "0.5%" },
+      { name: "Afinitor", percentage: "0.3%" },
+      { name: "Sandostatin", percentage: "0.1%" },
+  ]);
+    
+      setCommentsWebsiteData([
+        {
+          platform: "Reddit",
+          content:
+            "The Otezla website has great resources! I loved the patient stories—it felt comforting to connect with others who understand what I'm going through.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Enbrel site a bit cluttered, but the information on dosing and side effects was helpful. A clearer layout would make it easier to navigate!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Humira website is a lifesaver. The patient support tools really helped me manage my treatment journey. I appreciate how they encourage community engagement.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Taltz site had useful videos explaining how the drug works, which made me feel more informed. Would love to see more patient testimonials, though!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Cimzia website quite informative, especially the section on coping strategies. It's nice to see a company acknowledge the emotional side of things.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Skyrizi website looks sleek, but I was disappointed by the lack of personal experiences shared. I think it would help patients to see more real stories.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the resources on the Tremfya website, especially the downloadable guides for managing treatment. It shows they care about patient education!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Cosentyx site user-friendly, but I wish it had more interactive features. A forum or chat function would be fantastic for connecting with other patients.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Rinvoq website had a lot of good info, but I was hoping for a clearer explanation of potential side effects. A dedicated FAQ section would be helpful!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I love how the Zycof site emphasizes support and community. The resources available for mental health support are invaluable for patients like me!",
+          User: "User",
+          Bucket: "Website",
+        },
+      ]);
+      setCommentsAds([
+        {
+          platform: "Reddit",
+          content:
+            "I saw an ad for Otezla that really resonated with me. It highlighted real patients and their journeys, making me feel less alone in my struggle with psoriatic arthritis.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Enbrel commercials always seem a bit too polished. I appreciate the effort, but I want to hear more authentic stories from everyday people, not just models!",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I was impressed by a Humira ad that included information about support programs. It made me feel like the company cares about patients beyond just selling the drug.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Taltz ads have been so relatable! I love seeing real patients share their experiences—it's nice to know others are going through similar struggles.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I've seen a few Cimzia ads that made me feel hopeful about treatment. It's encouraging to see success stories, but I wish they showed a wider range of experiences.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Skyrizi ads are visually stunning, but I think they lack depth. I want to know more about how the drug actually helps and hear from real patients!",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the honesty in the Tremfya advertisements. They talk about side effects openly, which is refreshing and makes me trust the brand more.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Cosentyx ads are catchy, but they feel a bit too focused on the positive outcomes. I think they should address the challenges patients face as well.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I recently saw a Rinvoq ad that focused on everyday life with psoriatic arthritis. It made me feel understood and seen, which is so important for patients.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Zycof advertisements are very informative, but they should include more emotional support content. It's crucial for us patients to feel supported in all aspects!",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+      ]);
+      setCommentsBrochure([
+        {
+          platform: "Reddit",
+          content:
+            "The Otezla brochure was really helpful! It explained how the drug works and included a lot of supportive resources. I felt more confident discussing it with my doctor.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I received a leaflet for Enbrel at my clinic, and while it had good info, I found it a bit too technical. A simpler breakdown would be appreciated for us patients!",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Humira information sheet was very thorough. I liked the FAQ section that addressed common concerns, especially about side effects. It made me feel less anxious.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Taltz brochure visually appealing, but it lacked personal stories. Including testimonials from other patients would make it feel more relatable.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Cimzia information sheet did a great job of outlining treatment goals. It helped me understand what to expect during my treatment journey.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the Skyrizi brochure's clear layout, but I wish it included more about lifestyle changes I could make to support my treatment. That would be helpful!",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Tremfya leaflet had some useful tips for managing symptoms alongside medication. I felt like it addressed the holistic approach to treatment.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Cosentyx brochure a bit overwhelming. It was packed with information, but I needed a more concise version that I could easily digest.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Rinvoq information sheet was very informative, especially the section on managing side effects. It really reassured me about starting treatment.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Zycof leaflet included a lot of practical resources, like links to support groups. It made me feel less isolated in my journey with psoriatic arthritis.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+      ]);
+      setCommentsVerbalCommunication([
+        {
+          platform: "Reddit",
+          content:
+            'When I talked to my doctor about Otezla, he was really supportive and explained how it could help with my symptoms. It made me feel like I was part of the decision-making process."',
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "During my last appointment, my dermatologist discussed Enbrel with me in detail. I appreciated how she took the time to answer all my questions without rushing.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a great conversation with my nurse about Humira. She shared her own experiences with the drug, which helped me feel more comfortable about starting it.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I joined a support group, and hearing others talk about their experiences with Taltz was eye-opening. It was comforting to know I wasn’t alone in my struggles.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "When discussing Cimzia with my family, I felt a bit frustrated. They didn’t understand the emotional impact of my condition, but it helped to explain it to them.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My friend who is on Skyrizi shared her experience with me, and it made a big difference. Hearing her positive feedback gave me hope about my treatment options.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "After my last visit, my doctor called to follow up on how I was doing with Tremfya. It was nice to feel cared for and supported in my treatment journey.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a candid chat with my pharmacist about Cosentyx. She provided insights on managing side effects that I hadn’t considered, which was super helpful.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My partner and I discussed starting Rinvoq together. Having that conversation made me feel more supported, knowing I had someone to lean on during treatment.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "In a recent webinar, I listened to a panel discussing Zycof. The information they shared about patient experiences and tips was invaluable for my decision-making.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+      ]);
+      setTitle1("Non-Small Cell Lung Cancer (NSCLC)");
+      setTitle2("Small Cell Lung Cancer (SCLC)");
+      setTitle3("Lung Carcinoid Tumors");
+    }  else if (selectedDisease === "Breast Cancer") {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 15 },
+        { title: "TOTAL DISCUSSIONS", number: "110,000" },
+        { title: "TOTAL COMMENTS", number: "9,200,000" },
+        { title: "AVG ENGAGEMENT", number: "12/thread" },
+    ]);
+    
+    setwebsiteData([
+        { name: "Otezla", value: 22, value2: 24 },
+        { name: "Enbrel", value: 18, value2: 21 },
+        { name: "Humira", value: 13, value2: 15 },
+        { name: "Stelara", value: 14, value2: 16 },
+        { name: "Cimzia", value: 10, value2: 13 },
+        { name: "Tremfya", value: 7, value2: 9 },
+        { name: "Skyrizi", value: 5, value2: 7 },
+        { name: "Xeljanz", value: 6, value2: 8 },
+        { name: "Rinvoq", value: 5, value2: 5 },
+        { name: "Remicade", value: 6, value2: 6 },
+    ]);
+    
+    setwebsiteData2([
+        { name: "Otezla", value: 20, value2: 23 },
+        { name: "Enbrel", value: 17, value2: 20 },
+        { name: "Humira", value: 14, value2: 17 },
+        { name: "Stelara", value: 11, value2: 13 },
+        { name: "Cimzia", value: 9, value2: 11 },
+        { name: "Tremfya", value: 6, value2: 8 },
+        { name: "Skyrizi", value: 5, value2: 7 },
+        { name: "Xeljanz", value: 5, value2: 6 },
+        { name: "Rinvoq", value: 5, value2: 6 },
+        { name: "Remicade", value: 6, value2: 6 },
+    ]);
+    
+    setwebsiteData3([
+        { name: "Kineret", value: 18, value2: 20 }, // New
+        { name: "Arava", value: 15, value2: 17 }, // New
+        { name: "Plaquenil", value: 13, value2: 15 }, // New
+        { name: "Imuran", value: 10, value2: 12 }, // New
+        { name: "Trexall", value: 8, value2: 10 }, // New
+        { name: "Otrexup", value: 6, value2: 8 }, // New
+        { name: "Rasuvo", value: 4, value2: 7 }, // New
+        { name: "Kevzara", value: 5, value2: 6 }, // New
+        { name: "Stelara", value: 4, value2: 6 }, // New
+        { name: "Tremfya", value: 4, value2: 4 }, // New
+    ]);
+    
+    setTvData([
+        { name: "Otezla", value: 20, value2: 21 },
+        { name: "Enbrel", value: 17, value2: 19 },
+        { name: "Humira", value: 14, value2: 16 },
+        { name: "Stelara", value: 7, value2: 11 },
+        { name: "Cimzia", value: 9, value2: 11 },
+        { name: "Tremfya", value: 4, value2: 8 },
+        { name: "Skyrizi", value: 6, value2: 8 },
+        { name: "Xeljanz", value: 3, value2: 6 },
+        { name: "Rinvoq", value: 3, value2: 6 },
+        { name: "Remicade", value: 4, value2: 4 },
+    ]);
+    
+    setTvData2([
+        { name: "Otezla", value: 15, value2: 19 },
+        { name: "Enbrel", value: 17, value2: 20 },
+        { name: "Humira", value: 14, value2: 17 },
+        { name: "Stelara", value: 6, value2: 11 },
+        { name: "Cimzia", value: 9, value2: 11 },
+        { name: "Tremfya", value: 8, value2: 8 },
+        { name: "Skyrizi", value: 4, value2: 7 },
+        { name: "Xeljanz", value: 5, value2: 7 },
+        { name: "Rinvoq", value: 4, value2: 7 },
+        { name: "Remicade", value: 4, value2: 4 },
+    ]);
+    
+    setTvData3([
+        { name: "Kineret", value: 17, value2: 19 }, // New
+        { name: "Arava", value: 14, value2: 16 }, // New
+        { name: "Plaquenil", value: 12, value2: 14 }, // New
+        { name: "Imuran", value: 9, value2: 11 }, // New
+        { name: "Trexall", value: 8, value2: 10 }, // New
+        { name: "Otrexup", value: 7, value2: 9 }, // New
+        { name: "Rasuvo", value: 5, value2: 8 }, // New
+        { name: "Kevzara", value: 6, value2: 7 }, // New
+        { name: "Stelara", value: 5, value2: 7 }, // New
+        { name: "Tremfya", value: 5, value2: 5 }, // New
+    ]);
+    
+    setTopDrug([
+        { name: "Otezla", percentage: "17.25%" },
+        { name: "Enbrel", percentage: "15.40%" },
+        { name: "Humira", percentage: "13.75%" },
+        { name: "Stelara", percentage: "7.50%" },
+        { name: "Cimzia", percentage: "9.80%" },
+        { name: "Tremfya", percentage: "6.10%" },
+        { name: "Skyrizi", percentage: "7.30%" },
+        { name: "Xeljanz", percentage: "5.60%" },
+        { name: "Rinvoq", percentage: "5.10%" },
+        { name: "Remicade", percentage: "4.50%" },
+        { name: "Orencia", percentage: "3.85%" },
+        { name: "Cosentyx", percentage: "2.40%" },
+        { name: "Taltz", percentage: "2.00%" },
+        { name: "Simponi", percentage: "1.85%" },
+        { name: "Simponi Aria", percentage: "1.40%" },
+        { name: "Kineret", percentage: "1.30%" },
+        { name: "Arava", percentage: "1.20%" },
+        { name: "Plaquenil", percentage: "1.15%" },
+        { name: "Imuran", percentage: "1.10%" },
+        { name: "Trexall", percentage: "1.05%" },
+        { name: "Otrexup", percentage: "1.00%" },
+        { name: "Rasuvo", percentage: "0.95%" },
+        { name: "Kevzara", percentage: "0.90%" },
+        { name: "Stelara", percentage: "0.85%" }, // Note: "Stelara" appears twice, this is the second one.
+        { name: "Tremfya", percentage: "0.82%" }, // Note: "Tremfya" appears twice, this is the second one.
+    ]);
+    
+      setCommentsWebsiteData([
+        {
+          platform: "Reddit",
+          content:
+            "The Otezla website has great resources! I loved the patient stories—it felt comforting to connect with others who understand what I'm going through.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Enbrel site a bit cluttered, but the information on dosing and side effects was helpful. A clearer layout would make it easier to navigate!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Humira website is a lifesaver. The patient support tools really helped me manage my treatment journey. I appreciate how they encourage community engagement.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Taltz site had useful videos explaining how the drug works, which made me feel more informed. Would love to see more patient testimonials, though!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Cimzia website quite informative, especially the section on coping strategies. It's nice to see a company acknowledge the emotional side of things.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Skyrizi website looks sleek, but I was disappointed by the lack of personal experiences shared. I think it would help patients to see more real stories.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the resources on the Tremfya website, especially the downloadable guides for managing treatment. It shows they care about patient education!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Cosentyx site user-friendly, but I wish it had more interactive features. A forum or chat function would be fantastic for connecting with other patients.",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Rinvoq website had a lot of good info, but I was hoping for a clearer explanation of potential side effects. A dedicated FAQ section would be helpful!",
+          User: "User",
+          Bucket: "Website",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I love how the Zycof site emphasizes support and community. The resources available for mental health support are invaluable for patients like me!",
+          User: "User",
+          Bucket: "Website",
+        },
+      ]);
+      setCommentsAds([
+        {
+          platform: "Reddit",
+          content:
+            "I saw an ad for Otezla that really resonated with me. It highlighted real patients and their journeys, making me feel less alone in my struggle with psoriatic arthritis.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Enbrel commercials always seem a bit too polished. I appreciate the effort, but I want to hear more authentic stories from everyday people, not just models!",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I was impressed by a Humira ad that included information about support programs. It made me feel like the company cares about patients beyond just selling the drug.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Taltz ads have been so relatable! I love seeing real patients share their experiences—it's nice to know others are going through similar struggles.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I've seen a few Cimzia ads that made me feel hopeful about treatment. It's encouraging to see success stories, but I wish they showed a wider range of experiences.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Skyrizi ads are visually stunning, but I think they lack depth. I want to know more about how the drug actually helps and hear from real patients!",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the honesty in the Tremfya advertisements. They talk about side effects openly, which is refreshing and makes me trust the brand more.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Cosentyx ads are catchy, but they feel a bit too focused on the positive outcomes. I think they should address the challenges patients face as well.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I recently saw a Rinvoq ad that focused on everyday life with psoriatic arthritis. It made me feel understood and seen, which is so important for patients.",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Zycof advertisements are very informative, but they should include more emotional support content. It's crucial for us patients to feel supported in all aspects!",
+          User: "User",
+          Bucket: "TV Ads",
+        },
+      ]);
+      setCommentsBrochure([
+        {
+          platform: "Reddit",
+          content:
+            "The Otezla brochure was really helpful! It explained how the drug works and included a lot of supportive resources. I felt more confident discussing it with my doctor.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I received a leaflet for Enbrel at my clinic, and while it had good info, I found it a bit too technical. A simpler breakdown would be appreciated for us patients!",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Humira information sheet was very thorough. I liked the FAQ section that addressed common concerns, especially about side effects. It made me feel less anxious.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Taltz brochure visually appealing, but it lacked personal stories. Including testimonials from other patients would make it feel more relatable.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Cimzia information sheet did a great job of outlining treatment goals. It helped me understand what to expect during my treatment journey.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the Skyrizi brochure's clear layout, but I wish it included more about lifestyle changes I could make to support my treatment. That would be helpful!",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Tremfya leaflet had some useful tips for managing symptoms alongside medication. I felt like it addressed the holistic approach to treatment.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I found the Cosentyx brochure a bit overwhelming. It was packed with information, but I needed a more concise version that I could easily digest.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Rinvoq information sheet was very informative, especially the section on managing side effects. It really reassured me about starting treatment.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The Zycof leaflet included a lot of practical resources, like links to support groups. It made me feel less isolated in my journey with psoriatic arthritis.",
+          User: "User",
+          Bucket: "Brochure",
+        },
+      ]);
+      setCommentsVerbalCommunication([
+        {
+          platform: "Reddit",
+          content:
+            'When I talked to my doctor about Otezla, he was really supportive and explained how it could help with my symptoms. It made me feel like I was part of the decision-making process."',
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "During my last appointment, my dermatologist discussed Enbrel with me in detail. I appreciated how she took the time to answer all my questions without rushing.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a great conversation with my nurse about Humira. She shared her own experiences with the drug, which helped me feel more comfortable about starting it.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I joined a support group, and hearing others talk about their experiences with Taltz was eye-opening. It was comforting to know I wasn’t alone in my struggles.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "When discussing Cimzia with my family, I felt a bit frustrated. They didn’t understand the emotional impact of my condition, but it helped to explain it to them.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My friend who is on Skyrizi shared her experience with me, and it made a big difference. Hearing her positive feedback gave me hope about my treatment options.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "After my last visit, my doctor called to follow up on how I was doing with Tremfya. It was nice to feel cared for and supported in my treatment journey.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a candid chat with my pharmacist about Cosentyx. She provided insights on managing side effects that I hadn’t considered, which was super helpful.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My partner and I discussed starting Rinvoq together. Having that conversation made me feel more supported, knowing I had someone to lean on during treatment.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "In a recent webinar, I listened to a panel discussing Zycof. The information they shared about patient experiences and tips was invaluable for my decision-making.",
+          User: "User",
+          Bucket: "Verbal communication",
+        },
+      ]);
+      setTitle1("ALL");
+      setTitle2("Biological Agents (Biologics)");
+      setTitle3("DMARDs");
     }
   };
 
@@ -1636,26 +2459,54 @@ export default function ContentPage() {
   const [title1, setTitle1] = useState("Diabetes with Weightloss");
   const [title2, setTitle2] = useState("Diabetes");
   const [title3, setTitle3] = useState("Gliptins");
+
+
+
+
+
+  
+      useEffect(() => {
+          if (selectedDisease === 'Type II Diabetes') {
+              setChartData(chartData13);
+              setChart2Data(chartData17);
+              setChart3Data(chartData21);
+          } else if (selectedDisease === 'Rheumatoid Arthritis') {
+              setChartData(chartData14);
+              setChart2Data(chartData18);
+              setChart3Data(chartData22);
+          } else if (selectedDisease === 'Psoriatic Arthritis') {
+              setChartData(chartData15);
+              setChart2Data(chartData19);
+              setChart3Data(chartData23);
+
+          }  else if (selectedDisease === 'Lung Cancer') {
+              setChartData(chartData16);
+              setChart2Data(chartData20);
+              setChart3Data(chartData24);
+          }  else {
+              setChartData(chartData1);
+          }
+      }, [selectedDisease]);
   return (
     <>
       <Header data={kpiData} onDiseaseChange={handleDiseaseChange} />
-      <Container fluid>
+      <Container fluid style={{textAlign: "justify"}}>
         <Container className="mt-2 p-3">
           <Card>
             <Row>
               <Col lg={4}>
                 <Card className="p-3 m-2">
-                  <TrialStackChart details={chartData1} />
+                  <TrialStackChart details={chartData} />
                 </Card>
               </Col>
               <Col lg={4}>
                 <Card className="p-3 m-2">
-                  <TrialStackChart details={chartData2} />
+                  <TrialStackChart details={chart2Data} />
                 </Card>
               </Col>
               <Col lg={4}>
                 <Card className="p-3 m-2">
-                  <TrialStackChart details={chartData3} />
+                  <TrialStackChart details={chart3Data} />
                 </Card>
               </Col>
             </Row>

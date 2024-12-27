@@ -7,7 +7,7 @@ export const CommentSection = ({commentsData}) =>{
     <Row>
       {commentsData.map((comment, index) => (
         <Col lg={12} key={index} className="mb-4"> {/* Change lg={12} to occupy the full row */}
-          <Card className="p-3">
+          <Card className="p-3" style={{textAlign: "justify"}}>
             <Card.Body>
               <Card.Text>{comment.content}</Card.Text>
               <Button style={{color:"#bc7ac4",backgroundColor:"#ffffff",border:'1px solid #bc7ac4'}}>{comment.platform}</Button>

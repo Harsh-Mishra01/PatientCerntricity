@@ -53,6 +53,20 @@ export default function Content() {
         { title: "TOTAL COMMENTS", number: "9,000,000" },
         { title: "AVG ENGAGEMENT", number: "5/thread" },
       ]);
+    } else if (selectedDisease === "Lung Cancer") {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 7 },
+        { title: "TOTAL DISCUSSIONS", number: "20,000" },
+        { title: "TOTAL COMMENTS", number: "11,000,000" },
+        { title: "AVG ENGAGEMENT", number: "8/thread" },
+      ]);
+    }  else if (selectedDisease === "Breast Cancer") {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 4 },
+        { title: "TOTAL DISCUSSIONS", number: "94,000" },
+        { title: "TOTAL COMMENTS", number: "8,000,000" },
+        { title: "AVG ENGAGEMENT", number: "7/thread" },
+      ]);
     } else {
       // Reset or handle default case
       setKpiData([

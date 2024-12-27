@@ -1372,6 +1372,666 @@ export default function SupportPage() {
       setTitle1("ALL");
       setTitle2("Biological Agents (Biologics)");
       setTitle3("DMARDs");
+    } else if (selectedDisease === "Lung Cancer") {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 18 },
+        { title: "TOTAL DISCUSSIONS", number: "740, 902" },
+        { title: "TOTAL COMMENTS", number: "2000000" },
+        { title: "AVG ENGAGEMENT", number: "2.7 comments/thread" },
+      ]);
+      setwebsiteData([
+        { name: "Keytruda", value: 92, value2: 88 },
+        { name: "Opdivo", value: 85, value2: 80 },
+        { name: "Tarceva", value: 78, value2: 75 },
+        { name: "Iressa", value: 20, value2: 30 },
+        { name: "Alimta", value: 65, value2: 63 },
+        { name: "Tagrisso", value: 50, value2: 47 },
+        { name: "Xalkori", value: 64, value2: 46 },
+        { name: "Alecensa", value: 28, value2: 25 },
+        { name: "Tecentriq", value: 18, value2: 16 },
+        { name: "Avastin", value: 8, value2: 6 },
+    ]);
+      setwebsiteData2([
+        { name: "Etopophos", value: 14, value2: 21 },
+        { name: "Carboplatin", value: 18, value2: 19 },
+        { name: "Cisplatin", value: 12, value2: 16 },
+        { name: "Imfinzi", value: 9, value2: 14 },
+        { name: "Camptosar", value: 7, value2: 11 },
+        { name: "Cyclophosphamide", value: 10, value2: 15 },
+        { name: "Adriamycin", value: 8, value2: 13 },
+        { name: "Keytruda", value: 5, value2: 8 },
+        { name: "Tecentriq", value: 7, value2: 9 },
+        { name: "Zofran", value: 5, value2: 9 },
+      ]);
+
+      setwebsiteData3([
+        { name: "Sandostatin", value: 19, value2: 24 },
+        { name: "Somatuline Depot", value: 14, value2: 20 },
+        { name: "Afinitor", value: 12, value2: 15 },
+        { name: "Sutent", value: 12, value2: 18 },
+        { name: "Xermelo", value: 15, value2: 19 },
+        { name: "Zofran", value: 13, value2: 2 },
+        { name: "Kytril", value: 12, value2: 17 },
+        { name: "Dexamethasone", value: 8, value2: 14 },
+        { name: "Caprelsa", value: 8, value2: 3 },
+        { name: "Temodar", value: 2, value2: 1 },
+    ]);
+    
+    
+      setnursingData([
+        { name: "Keytruda", value: 92, value2: 88 },
+        { name: "Opdivo", value: 85, value2: 80 },
+        { name: "Tarceva", value: 78, value2: 75 },
+        { name: "Iressa", value: 20, value2: 30 },
+        { name: "Alimta", value: 65, value2: 63 },
+        { name: "Tagrisso", value: 50, value2: 47 },
+        { name: "Xalkori", value: 64, value2: 46 },
+        { name: "Alecensa", value: 28, value2: 25 },
+        { name: "Tecentriq", value: 18, value2: 16 },
+        { name: "Avastin", value: 8, value2: 6 },
+      ]);
+      setnursingData2([
+        { name: "Etopophos", value: 14, value2: 21 },
+        { name: "Carboplatin", value: 18, value2: 19 },
+        { name: "Cisplatin", value: 12, value2: 16 },
+        { name: "Imfinzi", value: 9, value2: 14 },
+        { name: "Camptosar", value: 7, value2: 11 },
+        { name: "Cyclophosphamide", value: 10, value2: 15 },
+        { name: "Adriamycin", value: 8, value2: 13 },
+        { name: "Keytruda", value: 5, value2: 8 },
+        { name: "Tecentriq", value: 7, value2: 9 },
+        { name: "Zofran", value: 5, value2: 9 },
+      ]);
+      setnursingData3([
+        { name: "Sandostatin", value: 19, value2: 24 },
+        { name: "Somatuline Depot", value: 14, value2: 20 },
+        { name: "Afinitor", value: 12, value2: 15 },
+        { name: "Sutent", value: 12, value2: 18 },
+        { name: "Xermelo", value: 15, value2: 19 },
+        { name: "Zofran", value: 13, value2: 2 },
+        { name: "Kytril", value: 12, value2: 17 },
+        { name: "Dexamethasone", value: 8, value2: 14 },
+        { name: "Caprelsa", value: 8, value2: 3 },
+        { name: "Temodar", value: 2, value2: 1 },
+      ]);
+
+      setTopDrug([
+        { name: "Keytruda", percentage: "12.5%" },
+        { name: "Opdivo", percentage: "11.2%" },
+        { name: "Tecentriq", percentage: "10.8%" },
+        { name: "Avastin", percentage: "9.7%" },
+        { name: "Tarceva", percentage: "8.5%" },
+        { name: "Iressa", percentage: "7.9%" },
+        { name: "Alimta", percentage: "7.2%" },
+        { name: "Tagrisso", percentage: "6.8%" },
+        { name: "Xalkori", percentage: "6.4%" },
+        { name: "Alecensa", percentage: "5.9%" },
+        { name: "Imfinzi", percentage: "5.4%" },
+        { name: "Camptosar", percentage: "5.0%" },
+        { name: "Cyclophosphamide", percentage: "4.6%" },
+        { name: "Adriamycin", percentage: "4.1%" },
+        { name: "Etopophos", percentage: "3.7%" },
+        { name: "Carboplatin", percentage: "3.4%" },
+        { name: "Cisplatin", percentage: "3.0%" },
+        { name: "Gilotrif", percentage: "2.8%" },
+        { name: "Lorbrena", percentage: "2.5%" },
+        { name: "Rybrevant", percentage: "2.2%" },
+        { name: "Zykadia", percentage: "1.9%" },
+        { name: "Vizimpro", percentage: "1.6%" },
+        { name: "Portrazza", percentage: "1.3%" },
+        { name: "Cyramza", percentage: "1.1%" },
+        { name: "Gavreto", percentage: "0.9%" },
+        { name: "Retevmo", percentage: "0.8%" },
+        { name: "Lazertinib", percentage: "0.7%" },
+        { name: "Sutent", percentage: "0.5%" },
+        { name: "Afinitor", percentage: "0.3%" },
+        { name: "Sandostatin", percentage: "0.1%" },
+      ]);
+
+      setCommentsFinancialSupport([
+        {
+          platform: "Reddit",
+          content:
+            "I was really relieved to find out that Otezla has a copay assistance program. It significantly reduced my out-of-pocket costs, making it more affordable.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Navigating the Enbrel copay was a bit challenging at first. But once I got in touch with their support team, they helped me find resources to lower my costs.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I'm grateful for the financial assistance options available for Humira. Without it, I wouldn't be able to afford my medication, and it's made a world of difference.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I didn't realize that Taltz offered a savings program until my doctor mentioned it. It’s such a relief to know I won’t have to choose between my health and finances.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The copay for Cimzia was a bit high, but I was able to get help through their patient assistance program. It really eased my financial burden.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a tough time affording Skyrizi, but I reached out to their support line and they were super helpful. They guided me through the application process for assistance.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The financial support options for Tremfya are fantastic! I never expected to get so much help with my copay—it’s made my treatment journey a lot less stressful.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I felt overwhelmed with the costs of Cosentyx, but their financial support team was amazing. They helped me apply for grants that covered most of my expenses.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The copay for Rinvoq was initially daunting, but their patient assistance program really came through for me. I’m so thankful for the support!",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I wasn’t aware of the financial aid available for Zycof until my pharmacist informed me. It’s such a relief to have that safety net while managing my treatment.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I can’t express how helpful my nurse has been since I started Otezla. She always checks in on me and provides tips for managing side effects. It’s so reassuring!",
+          User: "User",
+          Bucket: "Financial support",
+        },
+      ]);
+      setCommentsNursingSupport([
+        {
+          platform: "Reddit",
+          content:
+            "The nursing support I received during my Enbrel treatment made a huge difference. My nurse was always available to answer my questions and gave me the confidence to manage my care.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a great experience with my Humira nurse. She walked me through the injection process and was there to support me during my first dose. It made it much less intimidating.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The nurse I spoke with about Taltz was incredibly knowledgeable. She shared strategies to handle flare-ups, and it felt like I had someone in my corner.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the follow-up calls from my Cimzia nurse. It’s nice to have someone checking in and offering advice on what to expect during treatment.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My Skyrizi nurse took the time to explain everything in detail. I felt really supported and informed about my treatment plan.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The nursing staff during my Tremfya consultations were great! They listened to my concerns and provided tailored advice that helped me manage my symptoms.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Having a dedicated nurse for my Cosentyx treatment was a game changer. She made sure I understood the medication and how to deal with any potential side effects.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My Rinvoq nurse was fantastic. She helped me create a personalized plan that incorporated my lifestyle, and it really made a difference in how I handle my arthritis.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I felt so supported by my Zycof nurse. She not only educated me about the medication but also offered emotional support, which is so important when dealing with chronic pain.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+      ]);
+      setCommentsPaperworkSupport([
+        {
+          platform: "Reddit",
+          content:
+            "The paperwork for Otezla was a nightmare until I got help from their support team. They walked me through the insurance requirements, which made it much easier!",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I struggled with the insurance forms for Enbrel. Thankfully, my doctor’s office had someone to assist with the paperwork, which was a lifesaver!",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Navigating the insurance paperwork for Humira was overwhelming. I had to call the insurance company multiple times, and it felt like no one had the answers I needed.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The online resources for Taltz were helpful, but I still got stuck with the paperwork. I wish there was more clarity on what was required by my insurance.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The insurance approval process for Cimzia was confusing and frustrating. I ended up missing my dose because the paperwork took too long to process.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I felt completely overwhelmed with the insurance requirements for Skyrizi. I reached out for help, but the response was slow, and it made me feel unsupported.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The paperwork for Tremfya was daunting. I had to fill out so many forms, and no one seemed to know what my insurance actually covered. It was so stressful!",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had no idea how to handle the insurance forms for Cosentyx, and the support team was unresponsive when I reached out for help. It made everything so much harder.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Getting the right paperwork done for Rinvoq felt impossible at times. The insurance process was slow, and I was left waiting weeks for a decision on my coverage.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I was really worried about the paperwork for Zycof, but their team provided some support. However, I still found myself lost in the details and overwhelmed.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+      ]);
+      setTitle1("Non-Small Cell Lung Cancer (NSCLC)");
+      setTitle2("Small Cell Lung Cancer (SCLC)");
+      setTitle3("Lung Carcinoid Tumors");
+    } else if (selectedDisease === "Breast Cancer") {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 18 },
+        { title: "TOTAL DISCUSSIONS", number: "740, 902" },
+        { title: "TOTAL COMMENTS", number: "2000000" },
+        { title: "AVG ENGAGEMENT", number: "2.7 comments/thread" },
+      ]);
+      setwebsiteData([
+        { name: "Otezla", value: 15, value2: 22 },
+        { name: "Enbrel", value: 17, value2: 18 },
+        { name: "Humira", value: 15, value2: 15 },
+        { name: "Stelara", value: 8, value2: 12 },
+        { name: "Cimzia", value: 6, value2: 12 },
+        { name: "Tremfya", value: 4, value2: 8 },
+        { name: "Skyrizi", value: 7, value2: 7 },
+        { name: "Xeljanz", value: 3, value2: 7 },
+        { name: "Rinvoq", value: 4, value2: 5 },
+        { name: "Remicade", value: 3, value2: 2 },
+      ]);
+      setwebsiteData2([
+        { name: "Otezla", value: 15, value2: 17 },
+        { name: "Enbrel", value: 12, value2: 12 },
+        { name: "Humira", value: 6, value2: 10 },
+        { name: "Stelara", value: 5, value2: 9 },
+        { name: "Cimzia", value: 6, value2: 7 },
+        { name: "Tremfya", value: 3, value2: 6 },
+        { name: "Skyrizi", value: 2, value2: 4 },
+        { name: "Xeljanz", value: 3, value2: 4 },
+        { name: "Rinvoq", value: 3, value2: 3 },
+        { name: "Remicade", value: 1, value2: 3 },
+      ]);
+      setwebsiteData3([
+        { name: "Kineret", value: 18, value2: 20 },
+        { name: "Arava", value: 15, value2: 17 },
+        { name: "Plaquenil", value: 12, value2: 15 },
+        { name: "Imuran", value: 10, value2: 12 },
+        { name: "Trexall", value: 8, value2: 10 },
+        { name: "Otrexup", value: 6, value2: 8 },
+        { name: "Rasuvo", value: 5, value2: 6 },
+        { name: "Kevzara", value: 4, value2: 5 },
+        { name: "Stelara", value: 3, value2: 4 },
+        { name: "Tremfya", value: 2, value2: 3 },
+      ]);
+      setnursingData([
+        { name: "Otezla", value: 15, value2: 20 },
+        { name: "Enbrel", value: 12, value2: 19 },
+        { name: "Humira", value: 10, value2: 10 },
+        { name: "Stelara", value: 8, value2: 9 },
+        { name: "Cimzia", value: 6, value2: 6 },
+        { name: "Tremfya", value: 4, value2: 6 },
+        { name: "Skyrizi", value: 3, value2: 5 },
+        { name: "Xeljanz", value: 3, value2: 3 },
+        { name: "Rinvoq", value: 3, value2: 3 },
+        { name: "Remicade", value: 3, value2: 2 },
+      ]);
+      setnursingData2([
+        { name: "Otezla", value: 15, value2: 23 },
+        { name: "Enbrel", value: 12, value2: 20 },
+        { name: "Humira", value: 10, value2: 19 },
+        { name: "Stelara", value: 8, value2: 17 },
+        { name: "Cimzia", value: 6, value2: 14 },
+        { name: "Tremfya", value: 4, value2: 10 },
+        { name: "Skyrizi", value: 3, value2: 6 },
+        { name: "Xeljanz", value: 3, value2: 4 },
+        { name: "Rinvoq", value: 3, value2: 3 },
+        { name: "Remicade", value: 1, value2: 1 },
+      ]);
+      setnursingData3([
+        { name: "Kineret", value: 18, value2: 18 },
+        { name: "Arava", value: 15, value2: 16 },
+        { name: "Plaquenil", value: 12, value2: 14 },
+        { name: "Imuran", value: 10, value2: 12 },
+        { name: "Trexall", value: 8, value2: 10 },
+        { name: "Otrexup", value: 6, value2: 8 },
+        { name: "Rasuvo", value: 5, value2: 6 },
+        { name: "Kevzara", value: 4, value2: 5 },
+        { name: "Stelara", value: 3, value2: 4 },
+        { name: "Tremfya", value: 2, value2: 3 },
+      ]);
+      setTopDrug([
+        { name: "Otezla", percentage: "15.05%" },
+        { name: "Enbrel", percentage: "13.28%" },
+        { name: "Humira", percentage: "11.49%" },
+        { name: "Stelara", percentage: "5.71%" },
+        { name: "Cimzia", percentage: "8.93%" },
+        { name: "Tremfya", percentage: "5.45%" },
+        { name: "Skyrizi", percentage: "5.94%" },
+        { name: "Xeljanz", percentage: "5.29%" },
+        { name: "Rinvoq", percentage: "4.65%" },
+        { name: "Remicade", percentage: "4.00%" },
+        { name: "Orencia", percentage: "3.36%" },
+        { name: "Cosentyx", percentage: "2.07%" },
+        { name: "Taltz", percentage: "1.75%" },
+        { name: "Simponi", percentage: "1.65%" },
+        { name: "Simponi Aria", percentage: "1.23%" },
+        { name: "Kineret", percentage: "1.08%" },
+        { name: "Arava", percentage: "1.03%" },
+        { name: "Plaquenil", percentage: "0.98%" },
+        { name: "Imuran", percentage: "0.93%" },
+        { name: "Trexall", percentage: "0.90%" },
+        { name: "Otrexup", percentage: "0.88%" },
+        { name: "Rasuvo", percentage: "0.86%" },
+        { name: "Kevzara", percentage: "0.83%" },
+        { name: "Stelara", percentage: "0.80%" }, // Note: "Stelara" appears twice, this is the second one.
+        { name: "Tremfya", percentage: "0.77%" }, // Note: "Tremfya" appears twice, this is the second one.
+      ]);
+      setCommentsFinancialSupport([
+        {
+          platform: "Reddit",
+          content:
+            "I was really relieved to find out that Otezla has a copay assistance program. It significantly reduced my out-of-pocket costs, making it more affordable.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Navigating the Enbrel copay was a bit challenging at first. But once I got in touch with their support team, they helped me find resources to lower my costs.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I'm grateful for the financial assistance options available for Humira. Without it, I wouldn't be able to afford my medication, and it's made a world of difference.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I didn't realize that Taltz offered a savings program until my doctor mentioned it. It’s such a relief to know I won’t have to choose between my health and finances.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The copay for Cimzia was a bit high, but I was able to get help through their patient assistance program. It really eased my financial burden.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a tough time affording Skyrizi, but I reached out to their support line and they were super helpful. They guided me through the application process for assistance.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The financial support options for Tremfya are fantastic! I never expected to get so much help with my copay—it’s made my treatment journey a lot less stressful.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I felt overwhelmed with the costs of Cosentyx, but their financial support team was amazing. They helped me apply for grants that covered most of my expenses.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The copay for Rinvoq was initially daunting, but their patient assistance program really came through for me. I’m so thankful for the support!",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I wasn’t aware of the financial aid available for Zycof until my pharmacist informed me. It’s such a relief to have that safety net while managing my treatment.",
+          User: "User",
+          Bucket: "Financial support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I can’t express how helpful my nurse has been since I started Otezla. She always checks in on me and provides tips for managing side effects. It’s so reassuring!",
+          User: "User",
+          Bucket: "Financial support",
+        },
+      ]);
+      setCommentsNursingSupport([
+        {
+          platform: "Reddit",
+          content:
+            "The nursing support I received during my Enbrel treatment made a huge difference. My nurse was always available to answer my questions and gave me the confidence to manage my care.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had a great experience with my Humira nurse. She walked me through the injection process and was there to support me during my first dose. It made it much less intimidating.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The nurse I spoke with about Taltz was incredibly knowledgeable. She shared strategies to handle flare-ups, and it felt like I had someone in my corner.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I appreciate the follow-up calls from my Cimzia nurse. It’s nice to have someone checking in and offering advice on what to expect during treatment.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My Skyrizi nurse took the time to explain everything in detail. I felt really supported and informed about my treatment plan.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The nursing staff during my Tremfya consultations were great! They listened to my concerns and provided tailored advice that helped me manage my symptoms.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Having a dedicated nurse for my Cosentyx treatment was a game changer. She made sure I understood the medication and how to deal with any potential side effects.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "My Rinvoq nurse was fantastic. She helped me create a personalized plan that incorporated my lifestyle, and it really made a difference in how I handle my arthritis.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I felt so supported by my Zycof nurse. She not only educated me about the medication but also offered emotional support, which is so important when dealing with chronic pain.",
+          User: "User",
+          Bucket: "Nursing sopport",
+        },
+      ]);
+      setCommentsPaperworkSupport([
+        {
+          platform: "Reddit",
+          content:
+            "The paperwork for Otezla was a nightmare until I got help from their support team. They walked me through the insurance requirements, which made it much easier!",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I struggled with the insurance forms for Enbrel. Thankfully, my doctor’s office had someone to assist with the paperwork, which was a lifesaver!",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Navigating the insurance paperwork for Humira was overwhelming. I had to call the insurance company multiple times, and it felt like no one had the answers I needed.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The online resources for Taltz were helpful, but I still got stuck with the paperwork. I wish there was more clarity on what was required by my insurance.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The insurance approval process for Cimzia was confusing and frustrating. I ended up missing my dose because the paperwork took too long to process.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I felt completely overwhelmed with the insurance requirements for Skyrizi. I reached out for help, but the response was slow, and it made me feel unsupported.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "The paperwork for Tremfya was daunting. I had to fill out so many forms, and no one seemed to know what my insurance actually covered. It was so stressful!",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I had no idea how to handle the insurance forms for Cosentyx, and the support team was unresponsive when I reached out for help. It made everything so much harder.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "Getting the right paperwork done for Rinvoq felt impossible at times. The insurance process was slow, and I was left waiting weeks for a decision on my coverage.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+        {
+          platform: "Reddit",
+          content:
+            "I was really worried about the paperwork for Zycof, but their team provided some support. However, I still found myself lost in the details and overwhelmed.",
+          User: "User",
+          Bucket: "Paperwork support",
+        },
+      ]);
+      setTitle1("ALL");
+      setTitle2("Biological Agents (Biologics)");
+      setTitle3("DMARDs");
     }
   };
 
@@ -1441,7 +2101,7 @@ export default function SupportPage() {
             </Col>
           </Row>
         </Container> */}
-        <Container className="mt-2 p-3">
+        <Container className="mt-2 p-3 " >
           <Card>
             <Row>
               <Col lg={4}>

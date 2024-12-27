@@ -1,412 +1,4 @@
-// export const chartData1 = {
-//     title: 'CONTENT',
-//     subtitle: 'WEBSITES',
-//     chartData: [
-//         {
-//             "name": "Ozempic",
-//             "value": "10"
-//         },
-//         {
-//             "name": "Saxenda",
-//             "value": "9"
-//         },
-//         {
-//             "name": "Wegovy",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Mounjaro",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "4"
-//         }
-//     ],
-//     comment: 'Patients say Ozempic has a website with clear info, supportive resources, relatable stories, and helpful tools like discount cards'
-//   };
-// export const chartData2 = {
-//     title: 'CONTENT',
-//     subtitle: 'SOCIAL MEDIA',
-//     chartData: [
-//         {
-//             "name": "Ozempic",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Wegovy",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Mounjaro",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Saxenda",
-//             "value": "4"
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "3"
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "2"
-//         }
-//     ],
-//     comment: "Ozempic's ads win big with ahigh visibility, and pop culture buzz, making it one of the most recognized diabetes medications."
-//   };
-// export const chartData3 = {
-//     title: 'CONTENT',
-//     subtitle: 'ADS',
-//     chartData: [
-//         {
-//             "name": "Ozempic",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Saxenda",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Wegovy",
-//             "value": "4"
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "3"
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "2"
-//         },
-//         {
-//             "name": "Mounjaro",
-//             "value": "2"
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "1"
-//         }
-//     ],
-//     comment: 'Ozempic dominates social media with weight loss buzz, celebrity mentions, and active discussions in health communities.'
-//   };
-// export const chartData4 = {
-//     title: 'PRODUCT',
-//     subtitle: 'EFFICACY',
-//     chartData: [
-//         {
-//             "name": "Ozempic",
-//             "value": "10"
-//         },
-//         {
-//             "name": "Saxenda",
-//             "value": "9"
-//         },
-//         {
-//             "name": "Wegovy",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Mounjaro",
-//             "value": "8"        },
-//         {
-//             "name": "Janumet",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "2"
-//         }
-//     ],
-//     comment: "Glucophage's efficacy is highly discussed for its first-line use, affordability, and low hypoglycemia risk."
-//   };
-// export const chartData5 = {
-//     title: 'PRODUCT',
-//     subtitle: 'SIDE EFFECTS',
-//     chartData: [
-//         {
-//             "name": "Truclicity",
-//             "value": "8",
-//         },
-//         {
-//             "name": "Ozempic",
-//             "value": "7",
-//         },
-//         {
-//             "name": "Wegovy",
-//             "value": "5",
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "5",
-//         },
-//         {
-//             "name": "Mounjaro",
-//             "value": "5",
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "4",
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "4",
-//         }
-//     ],
-//     comment: "Trulicity stands out for its easy, once-weekly dosing and pre-filled auto-injector, offering simplicity and effective blood sugar control."
-//   };
-// export const chartData6 = {
-//     title: 'PRODUCT',
-//     subtitle: 'SAFETY',
-//     chartData: [
-//         {
-//             "name": "Glucophage",
-//             "value": "10",
-//         },
-//         {
-//             "name": "Januvia",
-//             "value": "7",
-//         },
-//         {
-//             "name": "Ozempic",
-//             "value": "6",
-//         },
-//         {
-//             "name": "Trulicity",
-//             "value": "6",
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "6",
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "5",
-//         },
-//         {
-//             "name": "Ozempic",
-//             "value": "5",
-//         }
-//     ],
-//     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
-//   };
 
-// export const chartData7 = {
-//     title: 'SUPPORT',
-//     subtitle: 'FINANCIAL SUPPORT',
-//     chartData: [
-//         {
-//             "name": "Ozempic",
-//             "value": "8",
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Januvia",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Victoza",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Trulicity",
-//             "value": "6"
-//         }
-//     ],
-//     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
-//   };
-// export const chartData8 = {
-//     title: 'SUPPORT',
-//     subtitle: 'NURSING SUPPORT',
-//     chartData: [
-//         {
-//             "name": "Ozempic",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Januvia",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Victoza",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "4"
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "4"
-//         },
-//         {
-//             "name": "Trulicity",
-//             "value": "2"
-//         }
-//     ],
-//     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
-//   };
-// export const chartData9 = {
-//     title: 'SUPPORT',
-//     subtitle: 'PAPERWORK SUPPORT',
-//     chartData: [
-//         {
-//             "name": "Ozempic",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Jardiance",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Januvia",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Victoza",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Glucophage",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Janumet",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Trulicity",
-//             "value": "5"
-//         }
-//     ],
-//     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
-//   };
-// export const chartData10 = {
-//     title: 'TRIAL',
-//     subtitle: 'PATIENT-CENTRICITY-SENTIMENT',
-//     chartData: [
-//         {
-//             "name": "Mounjaro",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Zynquist",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Pegylated Exendin-4",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Cagrilintide",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Tzield",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Efpeglenatide",
-//             "value": "6"
-//         },
-//     ],
-//     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
-//   };
-// export const chartData11 = {
-//     title: 'TRIAL',
-//     subtitle: 'TRANSPARENCY',
-//     chartData: [
-//         {
-//             "name": "Mounjaro",
-//             "value": "5"
-//         },
-//         {
-//             "name": "Zynquist",
-//             "value": "4"
-//         },
-//         {
-//             "name": "Pegylated Exendin-4",
-//             "value": "3"
-//         },
-//         {
-//             "name": "Cagrilintide",
-//             "value": "2"
-//         },
-//         {
-//             "name": "Tzield",
-//             "value": "1"
-//         },
-//         {
-//             "name": "Efpeglenatide",
-//             "value": "1"
-//         },
-//     ],
-//     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
-//   };
-// export const chartData12= {
-//     title: 'TRIAL',
-//     subtitle: 'TRIAL SUPPORT',
-//     chartData: [
-//         {
-//             "name": "Mounjaro",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Zynquist",
-//             "value": "8"
-//         },
-//         {
-//             "name": "Pegylated Exendin-4",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Cagrilintide",
-//             "value": "7"
-//         },
-//         {
-//             "name": "Tzield",
-//             "value": "6"
-//         },
-//         {
-//             "name": "Efpeglenatide",
-//             "value": "6"
-//         },
-//     ],
-//     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
-//   };
-  
 
 export const chartData1 = {
     title: 'CONTENT',
@@ -938,4 +530,136 @@ export const chartData1 = {
     ],
     comment: "Patients view Glucophage as safest for its mild side effects and low hypoglycemia risk."
   };
-  
+
+  export const chartData13 = {
+    title: 'CONTENT',
+    subtitle: 'WEBSITES',
+    chartData: [
+      { "name": "Ozempic", "value": "12" },
+      { "name": "Saxenda", "value": "10" },
+      { "name": "Wegovy", "value": "9" },
+      { "name": "Jardiance", "value": "8" },
+      { "name": "Mounjaro", "value": "7" },
+      { "name": "Glucophage", "value": "6" },
+      { "name": "Janumet", "value": "5" }
+    ],
+    dataSets: [
+              {
+                label: "Positive",
+                data: [70.3, 50.2, 60.1, 45.6, 30.4, 55.7, 50.9],
+                borderWidth: 0,
+                backgroundColor: "#7a3e96",
+                borderRadius: 10,
+                barThickness: 10,
+                maxBarThickness: 15,
+              },
+              {
+                label: "Neutral",
+                data: [19.8, 30.3, 23.5, 15.2, 39.5, 29.3, 21.1],
+                borderWidth: 0,
+                backgroundColor: "#e1e3e6",
+                borderRadius: 10,
+                barThickness: 10,
+                maxBarThickness: 15,
+              },
+              {
+                label: "Negative",
+                data: [9.9, 19.5, 16.4, 39.2, 30.1, 15.0, 28.0],
+                borderWidth: 0,
+                backgroundColor: "#c9b0de",
+                borderRadius: 10,
+                barThickness: 10,
+                maxBarThickness: 15,
+              },
+            ],
+    comment: 'Patients highlight that Ozempic’s website provides excellent support resources, including personal success stories, detailed information on its usage, and valuable discounts.'
+};
+
+export const chartData14 = {
+  title: 'CONTENT',
+  subtitle: 'WEBSITES',
+  chartData: [
+    { "name": "Ozempic", "value": "15" },
+    { "name": "Saxenda", "value": "13" },
+    { "name": "Wegovy", "value": "11" },
+    { "name": "Jardiance", "value": "9" },
+    { "name": "Mounjaro", "value": "8" },
+    { "name": "Glucophage", "value": "7" },
+    { "name": "Janumet", "value": "6" }
+  ],
+  dataSets: [
+            {
+              label: "Positive",
+              data: [80.2, 60.1, 75.5, 50.3, 40.5, 70.1, 65.0],
+              borderWidth: 0,
+              backgroundColor: "#7a3e96",
+              borderRadius: 10,
+              barThickness: 10,
+              maxBarThickness: 15,
+            },
+            {
+              label: "Neutral",
+              data: [13.4, 24.6, 18.3, 30.7, 43.2, 22.8, 20.3],
+              borderWidth: 0,
+              backgroundColor: "#e1e3e6",
+              borderRadius: 10,
+              barThickness: 10,
+              maxBarThickness: 15,
+            },
+            {
+              label: "Negative",
+              data: [6.4, 15.3, 6.2, 19.0, 16.3, 7.1, 14.7],
+              borderWidth: 0,
+              backgroundColor: "#c9b0de",
+              borderRadius: 10,
+              barThickness: 10,
+              maxBarThickness: 15,
+            },
+          ],
+  comment: 'Patients mention that Ozempic’s website is comprehensive, offering easy navigation, informative content, and personalized health tips with interactive tools for managing their treatment.'
+};
+
+export const chartData15 = {
+  title: 'CONTENT',
+  subtitle: 'WEBSITES',
+  chartData: [
+    { "name": "Ozempic", "value": "20" },
+    { "name": "Saxenda", "value": "18" },
+    { "name": "Wegovy", "value": "14" },
+    { "name": "Jardiance", "value": "12" },
+    { "name": "Mounjaro", "value": "10" },
+    { "name": "Glucophage", "value": "9" },
+    { "name": "Janumet", "value": "7" }
+  ],
+  dataSets: [
+            {
+              label: "Positive",
+              data: [72.3, 68.1, 63.2, 55.6, 45.4, 67.2, 59.0],
+              borderWidth: 0,
+              backgroundColor: "#7a3e96",
+              borderRadius: 10,
+              barThickness: 10,
+              maxBarThickness: 15,
+            },
+            {
+              label: "Neutral",
+              data: [21.1, 18.4, 22.5, 33.1, 41.3, 24.0, 28.7],
+              borderWidth: 0,
+              backgroundColor: "#e1e3e6",
+              borderRadius: 10,
+              barThickness: 10,
+              maxBarThickness: 15,
+            },
+            {
+              label: "Negative",
+              data: [6.6, 13.5, 14.3, 11.3, 13.3, 8.8, 12.3],
+              borderWidth: 0,
+              backgroundColor: "#c9b0de",
+              borderRadius: 10,
+              barThickness: 10,
+              maxBarThickness: 15,
+            },
+          ],
+  comment: 'Ozempic’s website stands out with a user-friendly layout and in-depth resources that cater to patient needs. Patients appreciate its clear, detailed information and easy-to-navigate tools for managing diabetes.'
+};
+

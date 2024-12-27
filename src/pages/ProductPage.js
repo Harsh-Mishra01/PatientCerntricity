@@ -1008,6 +1008,46 @@ export default function ProductPage() {
       setTitle1("ALL");
       setTitle2("Biological Agents (Biologics)");
       setTitle3("DMARDs");
+    } else if (selectedDisease === "Lung Cancer")
+    {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 18 },
+        { title: "TOTAL DISCUSSIONS", number: "740, 902" },
+        { title: "TOTAL COMMENTS", number: "2000000" },
+        { title: "AVG ENGAGEMENT", number: "2.7 comments/thread" },
+    ]);
+    setTopDrug([
+      { name: "Keytruda", percentage: "12.5%" },
+      { name: "Opdivo", percentage: "11.2%" },
+      { name: "Tecentriq", percentage: "10.8%" },
+      { name: "Avastin", percentage: "9.7%" },
+      { name: "Tarceva", percentage: "8.5%" },
+      { name: "Iressa", percentage: "7.9%" },
+      { name: "Alimta", percentage: "7.2%" },
+      { name: "Tagrisso", percentage: "6.8%" },
+      { name: "Xalkori", percentage: "6.4%" },
+      { name: "Alecensa", percentage: "5.9%" },
+      { name: "Imfinzi", percentage: "5.4%" },
+      { name: "Camptosar", percentage: "5.0%" },
+      { name: "Cyclophosphamide", percentage: "4.6%" },
+      { name: "Adriamycin", percentage: "4.1%" },
+      { name: "Etopophos", percentage: "3.7%" },
+      { name: "Carboplatin", percentage: "3.4%" },
+      { name: "Cisplatin", percentage: "3.0%" },
+      { name: "Gilotrif", percentage: "2.8%" },
+      { name: "Lorbrena", percentage: "2.5%" },
+      { name: "Rybrevant", percentage: "2.2%" },
+      { name: "Zykadia", percentage: "1.9%" },
+      { name: "Vizimpro", percentage: "1.6%" },
+      { name: "Portrazza", percentage: "1.3%" },
+      { name: "Cyramza", percentage: "1.1%" },
+      { name: "Gavreto", percentage: "0.9%" },
+      { name: "Retevmo", percentage: "0.8%" },
+      { name: "Lazertinib", percentage: "0.7%" },
+      { name: "Sutent", percentage: "0.5%" },
+      { name: "Afinitor", percentage: "0.3%" },
+      { name: "Sandostatin", percentage: "0.1%" },
+  ]);
     }
   };
 

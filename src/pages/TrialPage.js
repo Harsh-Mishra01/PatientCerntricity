@@ -1344,6 +1344,47 @@ export default function TrialPage() {
       setTitle1("ALL");
       setTitle2("Biological Agents (Biologics)");
       setTitle3("DMARDs");
+    } else if (selectedDisease === "Lung Cancer") {
+      setKpiData([
+        { title: "TOTAL FORUMS", number: 18 },
+        { title: "TOTAL DISCUSSIONS", number: "740, 902" },
+        { title: "TOTAL COMMENTS", number: "2000000" },
+        { title: "AVG ENGAGEMENT", number: "2.7 comments/thread" },
+      ]);
+      setTopDrug([
+        { name: "Keytruda", percentage: "15.0%" },
+        { name: "Opdivo", percentage: "13.0%" },
+        { name: "Tecentriq", percentage: "11.5%" },
+        { name: "Avastin", percentage: "10.0%" },
+        { name: "Tarceva", percentage: "9.5%" },
+        { name: "Iressa", percentage: "8.2%" },
+        { name: "Alimta", percentage: "7.8%" },
+        { name: "Tagrisso", percentage: "7.2%" },
+        { name: "Xalkori", percentage: "6.9%" },
+        { name: "Alecensa", percentage: "6.5%" },
+        { name: "Imfinzi", percentage: "6.0%" },
+        { name: "Camptosar", percentage: "5.5%" },
+        { name: "Cyclophosphamide", percentage: "5.1%" },
+        { name: "Adriamycin", percentage: "4.6%" },
+        { name: "Etopophos", percentage: "4.3%" },
+        { name: "Carboplatin", percentage: "4.0%" },
+        { name: "Cisplatin", percentage: "3.5%" },
+        { name: "Gilotrif", percentage: "3.0%" },
+        { name: "Lorbrena", percentage: "2.8%" },
+        { name: "Rybrevant", percentage: "2.4%" },
+        { name: "Zykadia", percentage: "2.1%" },
+        { name: "Vizimpro", percentage: "1.8%" },
+        { name: "Portrazza", percentage: "1.5%" },
+        { name: "Cyramza", percentage: "1.3%" },
+        { name: "Gavreto", percentage: "1.0%" },
+        { name: "Retevmo", percentage: "0.9%" },
+        { name: "Lazertinib", percentage: "0.8%" },
+        { name: "Sutent", percentage: "0.6%" },
+        { name: "Afinitor", percentage: "0.4%" },
+        { name: "Sandostatin", percentage: "0.2%" },
+      ]);
+      
+
     }
   };
 
